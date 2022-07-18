@@ -5,3 +5,7 @@
 ## Books
 
 - _SAT_SMT_by_example_
+
+## Z3 Documentations
+
+- <https://theory.stanford.edu/~nikolaj/programmingz3.html>
