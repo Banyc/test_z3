@@ -28,7 +28,7 @@ fn main() {
 }
 
 fn prove(ctx: &Context, proposition: &Bool) {
-    let solver = Solver::new(&ctx);
+    let solver = Solver::new(ctx);
     solver.assert(&proposition.not());
     let sat = solver.check();
     match sat {

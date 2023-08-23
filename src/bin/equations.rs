@@ -19,8 +19,8 @@ fn main() {
         solver.assert(&x.gt(&two)); // x > 2
         solver.assert(&y.lt(&ten)); // y < 10
 
-        let product = Int::mul(&ctx, &vec![&two, &y]);
-        let sum = Int::add(&ctx, &vec![&x, &product]);
+        let product = Int::mul(&ctx, &[&two, &y]);
+        let sum = Int::add(&ctx, &[&x, &product]);
         solver.assert(&sum._eq(&seven)); // x + 2*y == 7
     }
 
